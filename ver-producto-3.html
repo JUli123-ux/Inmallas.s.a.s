@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRECOTES - Invermallas</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #002c4d;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            height: 100px;
+        }
+        .logo img {
+            width: 150px;
+        }
+        header h1 {
+            margin: 0;
+            margin-left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+            padding: 8px 15px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #005079;
+            border-radius: 8px;
+        }
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 1200px; /* Ampliar el contenedor */
+        }
+        .producto {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 60%; /* Más ancho para imágenes más grandes */
+            margin: 20px 10px; /* Más espacio entre tarjetas */
+            padding: 20px; /* Espaciado interno */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .producto img {
+            width: 50%; /* Ampliar el tamaño de la imagen */
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .producto-info {
+            width: 45%; /* Más espacio para texto */
+        }
+        .producto h3 {
+            color: #002c4d;
+            font-size: 22px; /* Título más grande */
+        }
+        .producto p {
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px; /* Más legible */
+        }
+        .producto ul {
+            list-style: none;
+            padding: 0;
+            color: #333;
+            text-align: left;
+            margin: 10px 0;
+        }
+        .producto ul li {
+            margin: 8px 0; /* Más espacio entre elementos */
+        }
+        footer {
+            background-color: #002c4d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.jpg" alt="Logo Invermallas">
+        </div>
+        <h1>INVERMALLAS S.A.S. SERVICIO Y CALIDAD</h1>
+        <nav>
+            <ul>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Productos -->
+    <div class="productos" id="inicio">
+        <div class="producto">
+            <img src="imagenes/basket2.jpg" alt="Producto 2">
+            <div class="producto-info">
+                <h3>OTROS PRODUCTOS</h3>
+                <p>La malla expandida es aplicada en varios artículos de hogar y/o para usos de oficinas en parques o centros comerciales como cestas de recolección.
+                    Se presentan artículos como porta lapiceros, porta papeles, porta tarjetas, papeleras, canastas, parrilleras, etc.</p>
+                <ul>
+                </ul>
+            </div>
+        </div>
+
+        <div class="producto">
+            <img src="imagenes/basket3.jpg" alt="Producto 3">
+            <div class="producto-info">
+                <h3>TALENTO HUMANO</h3>
+                <p>Para la prestación de nuestros servicios contamos con un selecto grupo de profesionales, quienes con sus habilidades y experiencia garantizan la calidad de nuestros trabajos para satisfacción de nuestros clientes, cumplir y sobrepasar las expectativas de quienes utilizan nuestros servicios.</p>
+                <ul>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer id="contacto">
+        <p>&copy; 2024 Invermallas - Todos los derechos reservados</p>
+        <div class="contacto">
+            <p><strong>Correo:</strong> inmallassas@Gmail.com</p>
+            <p><strong>Facebook:</strong> Inmallas Sas</p>
+            <p><strong>Instagram:</strong> inmallasas</p>
+            <p><strong>Teléfono:</strong> 3044291387</p>
+            <p><strong>Dirección:</strong> Dir. Calle 12C • 1B – 03 Barrio San Marcos
+                Soacha Cundinamarca</p>
+        </div>
+    </footer>
+    

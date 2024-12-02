@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invermallas</title>
+    <style>
+        /* Estilo General */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Encabezado */
+        header {
+            background-color: #002c4d;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+            height: 120px;
+        }
+
+        .logo img {
+            width: 200px;
+        }
+
+        header h1 {
+            margin: 0;
+            margin-left: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navegación */
+        nav {
+            margin-left: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background 0.3s;
+            white-space: nowrap; /* Fuerza que el texto esté en una sola línea */
+        }
+
+        nav ul li a:hover {
+            background-color: #005079;
+            border-radius: 8px;
+        }
+
+        /* Sección de Productos */
+        .productos {
+            padding: 40px 20px;
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .producto {
+            width: 200px;
+            margin: 20px;
+            text-align: center;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .producto img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .producto p {
+            font-size: 18px;
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .producto a {
+            text-decoration: none;
+            color: #002c4d;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .producto a:hover {
+            background-color: #002c4d;
+            color: white;
+        }
+
+        /* ¿Quiénes Somos? */
+        .quienes-somos {
+            background-color: #f4f4f4;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .quienes-somos h2 {
+            color: #002c4d;
+            font-size: 24px;
+        }
+
+        .quienes-somos p, .quienes-somos li {
+            text-align: left;
+            max-width: 800px;
+            margin: 0 auto 10px;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .quienes-somos ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .quienes-somos ul li:before {
+            content: "• ";
+            color: #002c4d;
+            font-weight: bold;
+        }
+
+        /* Pie de página */
+        footer {
+            background-color: #002c4d;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.jpg" alt="Logo"> <!-- Asegúrate de que el logo esté en la carpeta "imagenes" -->
+        </div>
+        <h1>INMALLAS S.A.S. SERVICIO Y CALIDAD</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#quienes-somos">¿Quiénes Somos?</a></li>
+                <li><a href="#contacto">Contáctenos</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="productos">
+        <h2>Productos</h2>
+        <div class="producto">
+            <img src="imagenes/rollos_malla.jpg" alt="Rollos de Malla Galvanizada">
+            <p>ROLLOS DE MALLA GALVANIZADA</p>
+            <a href="ver-producto-1.html">Ver Producto</a>
+        </div>
+        <div class="producto">
+            <img src="imagenes/precotes.jpg" alt="PRECOTES">
+            <p>PRECOTES</p>
+            <a href="ver-producto-2.html">Ver Producto</a>
+        </div>
+        <div class="producto">
+            <img src="imagenes/malla_gallinero.jpg" alt="Malla Gallinero">
+            <p>Otros</p>
+            <a href="ver-producto-3.html">Ver Producto</a>
+        </div>
+    </section>
+
+    <!-- Sección ¿Quiénes Somos? -->
+    <section id="quienes-somos" class="quienes-somos">
+        <h2>¿QUIÉNES SOMOS?</h2>
+        <p>Somos una empresa dedicada al diseño y fabricación de malla expandida, fabricamos para clientes profesionales del sector u otros fabricantes que necesiten trabajos de cualquier tipo del sector de metalmecánica.</p>
+        <p>Nuestros productos "malla galvanizada" son apropiados para sectores como empresas filtreras, empresas constructoras de obra civil, ferreterías, sector agroindustrial, encerramientos, construcción de jaulas, uso en galpones, y también nuestra malla es utilizada en la fabricación de productos de hogar y oficinas como setas, papeleras, portapapeles, entre otros.</p>
+        <p>Somos reconocidos por nuestros clientes por la eficiencia, cumplimiento y calidad del producto terminado. Además, presentamos innovación en nuevos productos facilitando el trabajo de manufactura a nuestros clientes.</p>
+
+        <h2>OBJETIVOS EMPRESARIALES</h2>
+        <ul>
+            <li>Buscar satisfacción en el cliente</li>
+            <li>Mejorar la relación con nuestros proveedores</li>
+            <li>Capacitar nuestro talento humano</li>
+            <li>Ejecutar y controlar los recursos de la organización</li>
+            <li>Mantener y mejorar la infraestructura y equipos de la organización</li>
+            <li>Contribuir en el desarrollo de nuestra gente y comunidad de la región</li>
+        </ul>
+
+        <h2>MISIÓN</h2>
+        <p>Prestar un servicio a la comunidad y al sector industrial de óptima calidad en el área de las ingenierías e industria de empresas metalmecánicas, cumpliendo a cabalidad con nuestros clientes a través de la identificación de sus necesidades y el ofrecimiento de productos adecuados como es nuestro producto estrella: las mallas fabricadas con calidad garantizada para que se conviertan en sus aliados de progreso.</p>
+
+        <h2>VISIÓN</h2>
+        <p>Ser una empresa líder, responsable y confiable en la prestación de nuestros servicios, a través del mejoramiento continuo, promoviendo la planeación y cumplimiento de objetivos. Ampliar nuestra cobertura de servicios a nivel nacional, superar las expectativas de nuestros clientes y lograr un reconocimiento sostenible en nuestra organización, con retos a corto plazo.</p>
+    </section>
+
+<footer id="contacto">
+    <p>&copy; 2024 Invermallas - Todos los derechos reservados</p>
+    <div class="contacto">
+        <p><strong>Correo:</strong> inmallassas@Gmail.com</p>
+        <p><strong>Facebook:</strong> Inmallas Sas</p>
+        <p><strong>Instagram:</strong> inmallasas</p>
+        <p><strong>Teléfono:</strong> 3044291387</p>
+        <p><strong>Dirección:</strong> Dir. Calle 12C • 1B – 03 Barrio San Marcos
+            Soacha Cundinamarca</p>
+    </div>
+</footer>

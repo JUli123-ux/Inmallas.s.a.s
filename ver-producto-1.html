@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invermallas - PRECOTES</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #002c4d;
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 20px 30px;
+            height: 120px;
+        }
+        header .logo img {
+            width: 180px;
+        }
+        header h1 {
+            margin: 0;
+            margin-left: 20px;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        nav {
+            margin-left: auto;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            padding: 10px 15px;
+            transition: background 0.3s;
+        }
+        nav ul li a:hover {
+            background-color: #005079;
+            border-radius: 8px;
+        }
+        .productos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin: 20px auto;
+            max-width: 1200px; /* Aumenta el ancho del contenedor */
+        }
+        .producto {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 48%; /* Mantén el 48% para espacio entre tarjetas */
+            margin: 10px 0;
+            padding: 20px; /* Aumenta el espacio interno */
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+        }
+        .producto img {
+            width: 50%; /* Aumenta el tamaño de la imagen */
+            height: auto;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .producto-info {
+            width: 45%; /* Ajusta la sección de texto */
+        }
+        .producto h3 {
+            color: #002c4d;
+            font-size: 22px; /* Aumenta el tamaño del título */
+        }
+        .producto p {
+            color: #333;
+            line-height: 1.6;
+            font-size: 16px; /* Mejora la legibilidad */
+        }
+        .producto ul {
+            list-style: none;
+            padding: 0;
+            color: #333;
+            text-align: left;
+            margin: 10px 0;
+        }
+        .producto ul li {
+            margin: 8px 0; /* Más espacio entre elementos */
+        }
+        footer {
+            background-color: #002c4d;
+            color: white;
+            text-align: center;
+            padding: 8px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <img src="imagenes/logo.jpg" alt="Logo">
+        </div>
+        <h1>INVERMALLAS S.A.S. SERVICIO Y CALIDAD</h1>
+        <nav>
+            <ul>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contáctenos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Productos -->
+    <section id="productos" class="productos">
+        <!-- Producto 1 -->
+        <div class="producto">
+            <img src="imagenes/imagen_producto_1.jpg" alt="Producto 1">
+            <div class="producto-info">
+                <h3>Producto 1</h3>
+                <p>Referencia:INMA760-26-25-24</p>
+                <ul>
+                    <li>Largo:30 m</li>
+                    <li>Altura:0.760 m</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="producto">
+            <img src="imagenes/imagen_producto_2.jpg" alt="Producto 2">
+            <div class="producto-info">
+                <h3>Producto 2</h3>
+                <p>Referencia:INMA750-26-25-24,INMA710-26-25-24,
+                    INMA664-26-25-24
+                </p>
+                <ul>
+                    <li>Largo:30 m</li>
+                    <li>Altura: 0.710 m</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="producto">
+            <img src="imagenes/imagen_producto_3.jpg" alt="Producto 3">
+            <div class="producto-info">
+                <h3>Producto 3</h3>
+                <p>Descripción: Este es el producto número 3 de PRECOTES.</p>
+                <ul>
+                    <li>Referencia:INMA544-26-25-24</li>
+                    <li>Largo:30 m</li>
+                    <li>Altura:0.544m</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+<footer id="contacto">
+    <p>&copy; 2024 Invermallas - Todos los derechos reservados</p>
+    <div class="contacto">
+        <p><strong>Correo:</strong> inmallassas@Gmail.com</p>
+        <p><strong>Facebook:</strong> Inmallas Sas</p>
+        <p><strong>Instagram:</strong> inmallasas</p>
+        <p><strong>Teléfono:</strong> 3044291387</p>
+        <p><strong>Dirección:</strong> Dir. Calle 12C • 1B – 03 Barrio San Marcos
+            Soacha Cundinamarca</p>
+    </div>
+</footer>
